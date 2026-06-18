@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-ruqaa: "Aref Ruqaa", serif;
+  --font-tajawal: "Tajawal", sans-serif;
+}
+
+body {
+  font-family: var(--font-tajawal);
+  direction: rtl;
+  text-align: right;
+}
+
+.font-ruqaa {
+  font-family: var(--font-ruqaa);
+}
+
+.font-tajawal {
+  font-family: var(--font-tajawal);
+}
+
+@keyframes music-bar {
+  0%, 100% {
+    height: 0.5rem;
+  }
+  50% {
+    height: 1.25rem;
+  }
+}
+
+.animate-music-bar {
+  animation: music-bar 0.6s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 83, 9, 0.3);
+  border-radius: 3px;
+}
